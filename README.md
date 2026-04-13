@@ -8,7 +8,7 @@ The pipeline supports both historical backfill and incremental updates, allowing
 
 ## Project Overview
 
-[img]
+![ ](https://github.com/geoffreyrwamakuba-rgb/FMCG-Post-Acquisition-Pipeline/blob/feffaf25336230f64611332e40eb80abf64d7034/Data%20Flow.png)
 
 ### 🏢 Business Scenario
 A global FMCG enterprise (**Atlikon**) acquired a nutrition startup (**SportsBar**).
