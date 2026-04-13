@@ -61,17 +61,21 @@ Designed and implemented a **scalable, auditable, incremental ELT pipeline** tha
 
 ```bash
 ├── 01_setup/
-│   ├── 01_setup_catalog.sql      # Unity Catalog schemas & tables
-│   ├── 01_dim_date.py            # Programmatic Date Dimension
-│   └── 03_config.py              # Centralized configuration
+│   ├── 01_setup_catalog.sql              # Unity Catalog schemas & tables
+│   ├── 01_dim_date.py                    # Programmatic Date Dimension
+│   └── 03_utilities.py                   # Centralized configuration
 │
 ├── 02_dimension_processing/
-│   ├── 1_customers.py            # Customer cleaning & ID mapping
-│   ├── 2_products.py             # Regex cleanup & hashing
-│   └── 3_pricing.py              # Dirty dates & price versioning
+│   ├── 1_customer_data_processing.py     # Customer cleaning & ID mapping
+│   ├── 2_product_data_processing.py      # Regex cleanup & hashing
+│   └── 3_pricing_data_processing.py      # Dirty dates & price versioning
 │
 ├── 03_fact_processing/
-│   ├── 01_full_load.py           # Historical load
-│   └── 02_incremental_load.py    # Daily incremental upsert logic
+│   ├── 01_full_load_fact.py              # Historical load
+│   └── 02_incremental_load_fact.py       # Daily incremental upsert logic
 │
+├── 04_denormalized_view/
+│   ├── 01_denormalized_table_query.txt   # Combined columns
+│   └── 02_parent_incremental_load.txt    # Incremental load of parent data
+
 └── README.md
