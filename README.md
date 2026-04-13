@@ -1,10 +1,14 @@
-# FMCG-Post-Acquisition-Pipeline
-This project builds an end-to-end data pipeline in Databricks to solve a post-acquisition data integration problem. 
+# FMCG - Post-Acquisition-Pipeline
+
+## Executive Summary
+
+This project builds an end-to-end data pipeline in Databricks to solve a post-acquisition data integration problem. It combines structured enterprise data with messy startup data into a single, reliable analytics layer using a Medallion Architecture (Bronze, Silver, Gold).
+
+The pipeline supports both historical backfill and incremental updates, allowing consistent reporting across both companies through one unified dataset.
 
 ## Project Overview
 
-img
-
+[img]
 
 ### 🏢 Business Scenario
 A global FMCG enterprise (**Atlikon**) acquired a nutrition startup (**SportsBar**).
