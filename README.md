@@ -1,4 +1,4 @@
-# FMCG - Post-Acquisition-Pipeline
+# FMCG - Post-Acquisition Pipeline
 
 ## Executive Summary
 
